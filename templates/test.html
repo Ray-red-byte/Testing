@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+</head>
+<body>
+    <div>
+        <h1>Add new awesome products from here:</h1>
+        <form action="/admin/product.html" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <div>
+                    <label for="main_image">Main Image:</label>
+                    <input type="file" id="main_image" name="main_image" required><br>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

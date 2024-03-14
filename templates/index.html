@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Admin</title>
+</head>
+<body>
+    <h1>Product Admin</h1>
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <label for="main_image">Main Image:</label>
+            <input type="file" id="main_image" name="main_image" required><br>
+       
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <script>
+        function addImageInput() {
+            var container = document.getElementById('imageInputs');
+            
+            // Create a new file input element
+            var newInput = document.createElement('input');
+            newInput.type = 'file';
+            newInput.name = 'other_images';
+            newInput.multiple = true;
+            
+            // Append the new input to the container
+            container.appendChild(newInput);
+        }
+    </script>
+</body>
+</html>
